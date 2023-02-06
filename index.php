@@ -12,11 +12,13 @@
             <div class="logo">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="logo">
             </div>
-            <nav>
-                <a href="/us">AboutUS</a>
-                <a href="/contact">contact</a>
-                <a href="/blog">blog</a>
-            </nav>
+            <?php 
+                $args = array(
+                    'theme_location' => 'main-menu',
+                    'container' => 'nav'
+                ); 
+                wp_nav_menu($args) 
+            ?>
         </div>
     </header>
     <main>
