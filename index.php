@@ -16,7 +16,8 @@
             <?php 
                 $args = array(
                     'theme_location' => 'main-menu',
-                    'container' => 'nav'
+                    'container' => 'nav',
+                    'container_class' =>'main-menu'
                 ); 
                 wp_nav_menu($args) 
             ?>
