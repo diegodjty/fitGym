@@ -3,6 +3,9 @@
 function fitGym_setup(){
     // IMG
     add_theme_support('post-thumbnails');
+
+    // Titles for SEO
+    add_theme_support('title-tag');
 }
 add_action('after_setup_theme','fitGym_setup');
 
