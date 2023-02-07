@@ -80,6 +80,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.feature-img {
+  margin-bottom: 3rem;
+}
 
 .container {
   width: min(95%, 120rem);
