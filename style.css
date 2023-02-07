@@ -89,6 +89,9 @@ img {
   margin: 0 auto;
 }
 
+.centered-content {
+  width: min(95%, 80rem);
+}
 /** Utils **/
 .text-center {
   text-align: center;
