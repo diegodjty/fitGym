@@ -5,9 +5,9 @@
                 get_template_part('template-parts/class')
             ?>
         </section>
-        <aside>
-            <h2>sidebar here</h2>
-        </aside>
+        <?php
+            get_sidebar();
+        ?>
     </main>
 <?php
     get_footer();

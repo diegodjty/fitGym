@@ -1,5 +1,8 @@
 <?php
 
+// Includes
+require get_template_directory().'/includes/widgets.php';
+
 function fitGym_setup(){
     // IMG
     add_theme_support('post-thumbnails');
@@ -28,9 +31,9 @@ function fitGym_widgets(){
     register_sidebar(array(
         'name'=> 'Sidebar 1',
         'id'=> 'sidebar_1',
-        'before_widget'=> '<div class="widget>"',
+        'before_widget'=> '<div class="widget">',
         'after_widget'=> '</div>',
-        'before_title'=>'<h3 class="text-center text-primary">',
+        'before_title'=>'<h3 class="text-center primary-text">',
         'after_title'=>'</h3>'
     ));
 }
