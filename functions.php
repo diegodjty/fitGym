@@ -23,3 +23,15 @@ function fitGym_scripts_styles(){
 }
 
 add_action('wp_enqueue_scripts','fitGym_scripts_styles');
+
+function fitGym_widgets(){
+    register_sidebar(array(
+        'name'=> 'Sidebar 1',
+        'id'=> 'sidebar_1',
+        'before_widget'=> '<div class="widget>"',
+        'after_widget'=> '</div>',
+        'before_title'=>'<h3 class="text-center text-primary">',
+        'after_title'=>'</h3>'
+    ));
+}
+add_action('widgets_init','fitGym_widgets');
