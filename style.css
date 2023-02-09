@@ -7,7 +7,7 @@
     License: GNU General Public License v2 or later
     License URI: http://www.gnu.org/licenses/gpl-2.0.html
     Tags: Gym, gimnasio, flexbox, css grid, mobile first
-    Text Domain: gymfitness
+    Text Domain: fitGym
 */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,900;1,700&family=Staatliches&display=swap');
 
@@ -274,4 +274,27 @@ hr {
   font-weight: 700;
   font-size: 2.2rem;
   text-align: center;
+}
+
+/** sidebar class list **/
+.sidebar-classes li {
+  border-bottom: 1px solid lightgray;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+.sidebar-classes li:last-of-type {
+  border: none;
+}
+
+.sidebar-classes .class-content h3 {
+  margin: 0;
+  font-size: 2.6rem;
+}
+.sidebar-classes .class-content a {
+  color: var(--primary);
+}
+.sidebar-classes .class-content {
+  font-size: 1.2rem;
 }

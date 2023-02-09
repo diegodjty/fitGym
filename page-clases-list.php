@@ -11,7 +11,7 @@
         <ul class="grid-list">
             <?php
                 $args = array(
-                    'post_type' => 'gymfitness_clases'
+                    'post_type' => 'fitgym_classes'
                 );
                 $clasess = new WP_Query($args);
 

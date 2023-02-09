@@ -2,7 +2,7 @@
     <main class="container section with-sidebar">
         <section class="main-content">
             <?php
-                get_template_part('template-parts/class')
+                get_template_part('template-parts/class')  
             ?>
         </section>
         <?php
