@@ -5,6 +5,14 @@
         if(has_post_thumbnail()){
             the_post_thumbnail('full',array('class'=>'feature-img'));
         };
+            $starting_hour = get_field('starting_hour');
+            $ending_hour = get_field('ending_hour')
+        ?>
+            <p class="class-info">
+            <?php the_field('classes_days');?> - 
+            <?php echo $starting_hour .' - '. $ending_hour; ?> </p>
+            <?php
+        
         the_content();
             
     endwhile;
