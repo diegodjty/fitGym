@@ -236,6 +236,28 @@ hr {
   position: relative;
   overflow: hidden;
 }
+/** Cards Category **/
+.card .post-categories {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.card .post-categories li {
+  background-color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.card .post-categories a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
 .card:hover img {
   transform: scale(1.1);
 }
@@ -257,10 +279,17 @@ hr {
   color: white;
   margin: 0;
 }
-.card .content p {
+.card .content p,
+.card .content .meta p {
   color: white;
 }
-
+.card .meta {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.card .meta span {
+  color: var(--primary);
+}
 /* Sidebar **/
 @media (min-width: 768px) {
   .with-sidebar {
