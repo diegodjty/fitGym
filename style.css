@@ -298,3 +298,47 @@ hr {
 .sidebar-classes .class-content {
   font-size: 1.2rem;
 }
+
+/** Galerry **/
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 300px);
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .image-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+.image-gallery li {
+}
+.image-gallery li:nth-child(4) {
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+.image-gallery li:nth-child(6) {
+  grid-row: 4/6;
+  grid-column: 1/2;
+}
+@media (min-width: 768px) {
+  .image-gallery li:nth-child(4) {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+  .image-gallery li:nth-child(6) {
+    grid-column: 2/3;
+    grid-row: 2/4;
+  }
+}
+.image-gallery li:nth-child(4) img,
+.image-gallery li:nth-child(6) img {
+  height: 620px;
+}
+.image-gallery img {
+  height: 300px;
+  object-fit: cover;
+}
