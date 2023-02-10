@@ -21,8 +21,13 @@ function fitGym_menus(){
 add_action('init','fitGym_menus');
 
 function fitGym_scripts_styles(){
+    // CSS files
     wp_enqueue_style('normalize','https://necolas.github.io/normalize.css/8.0.1/normalize.css',array(),'8.0.1');
     wp_enqueue_style('style',get_stylesheet_uri(), array('normalize'),'1.0.0');
+    wp_enqueue_style('lightboxcss',get_template_directory_uri().'/css/lightbox.min.css',array(''),'2.11.3');
+
+    // JS files
+    wp_enqueue_script('lightbox.js',get_template_directory_uri().'/js/lightbox.min.js',array('jquery'),'2.11.3',true);
 }
 
 add_action('wp_enqueue_scripts','fitGym_scripts_styles');

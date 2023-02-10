@@ -23,7 +23,7 @@
 
                             ?>
                                 <li>
-                                    <a href="<?php echo $full_image; ?>">
+                                    <a data-lightbox="gallery" href="<?php echo $full_image; ?>">
                                         <img src="<?php echo $big_image; ?>" alt="gallery image">
                                     </a>
                                 </li>
