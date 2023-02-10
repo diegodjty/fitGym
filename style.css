@@ -428,3 +428,9 @@ hr {
 .map {
   margin-bottom: 5rem;
 }
+
+/** Home Page **/
+.welcome p {
+  max-width: 80rem;
+  margin: 0 auto;
+}
