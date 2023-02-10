@@ -43,3 +43,19 @@ function fitGym_widgets(){
     ));
 }
 add_action('widgets_init','fitGym_widgets');
+
+// Create Shortcode
+function fitGym_location_shotcode(){
+    ?>
+        <div class="map">
+            <?php 
+                 if(is_page('contact')){
+                    the_field('location');
+                }
+            ?>
+        </div>
+        <h2 class="text-center primary-text">Contact Form</h2>
+    <?php
+    echo do_shortcode('[contact-form-7 id="107" title="Contact form 1"]');
+}
+add_shortcode('fitGym_location','fitGym_location_shotcode');

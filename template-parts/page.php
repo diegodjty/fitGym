@@ -5,9 +5,6 @@
         if(has_post_thumbnail()){
             the_post_thumbnail('full',array('class'=>'feature-img'));
         };
-        if(is_page('contact')){
-            the_field('location');
-        }
         the_content();
             
     endwhile;

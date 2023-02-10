@@ -424,3 +424,7 @@ hr {
   margin: 2rem auto 0 auto;
   background-color: var(--primary);
 }
+
+.map {
+  margin-bottom: 5rem;
+}
