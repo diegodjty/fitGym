@@ -371,3 +371,31 @@ hr {
   height: 300px;
   object-fit: cover;
 }
+
+/** Meta Information **/
+.meta-info {
+  background-color: lightgray;
+  padding: 2rem;
+}
+@media (min-width) {
+  .meta-info {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.meta-info p,
+.meta-info p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: black;
+}
+
+.meta-info span {
+  color: var(--primary);
+}
+.meta-info .category {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
