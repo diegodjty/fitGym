@@ -399,3 +399,28 @@ hr {
   align-items: center;
   gap: 0.5rem;
 }
+
+/** Contact Form **/
+.wpcf7 label {
+  font-weight: 700;
+}
+
+.wpcf7 .wpcf7-form-control {
+  width: 100%;
+  border: 1px solid lightgray;
+}
+
+.wpcf7 .wpcf7-submit {
+  background-color: var(--primary);
+  font-size: 2rem;
+  font-family: var(--heading-font);
+  padding: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.wpcf7 .wpcf7-spinner {
+  display: block;
+  margin: 2rem auto 0 auto;
+  background-color: var(--primary);
+}
