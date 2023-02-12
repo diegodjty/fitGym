@@ -46,6 +46,8 @@
         </div>
     </section>
     <main class="container section">
+        <h2 class="text-center primary-text">Our Classes</h2>
+        <?php fitGym_classes_list(4);?>
     </main>
 <?php
     get_footer();
