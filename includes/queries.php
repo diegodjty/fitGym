@@ -34,3 +34,44 @@ function fitGym_classes_list($quantity = -1){
                 </ul>
     <?php
 }
+
+function fitGym_instructors_list(){
+    ?>
+        <ul class="grid-list instructors">
+            <?php
+                $args = array(
+                    'post_type' => 'instructors'
+                );
+               
+                $instructors = new WP_Query($args);
+                // echo $instructors;
+                while($instructors->have_posts()){
+                    $instructors->the_post();
+                ?>
+                    <li class="instructor">
+                        <?php the_post_thumbnail('large'); ?>
+                        <div class="content text-center">
+                            <h3><?php the_title() ;?></h3>
+                            <?php the_content();?>
+
+                            <div class="specialty">
+                                <?php
+                                    $esp= get_field('specialty_');
+                                    foreach($esp as $e){
+                                        ?>
+                                            <span class="tag">
+                                                <?php echo esc_html($e);?>
+                                            </span>
+                                        <?php
+                                    }
+                                ;?>
+                            </div>
+                        </div>
+                    </li>
+                <?php
+                    }
+                    wp_reset_postdata();
+                ?>
+         </ul>
+    <?php
+}

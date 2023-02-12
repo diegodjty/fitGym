@@ -54,6 +54,12 @@
             </a>
         </div>
     </main>
-<?php
+
+    <section class="container section">
+        <h2 class="text-center primary-text">Our Instructors</h2>
+        <p class="text-center">Professionals Instructors To help you</p>
+        <?php fitGym_instructors_list();?>
+    </section>
+<?php 
     get_footer();
 ?>
