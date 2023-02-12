@@ -48,6 +48,11 @@
     <main class="container section">
         <h2 class="text-center primary-text">Our Classes</h2>
         <?php fitGym_classes_list(4);?>
+        <div class="btn-container">
+            <a class="btn primary-btn" href="<?php echo esc_url(get_permalink(get_page_by_title('Classes')));?>">
+                View All Classes
+            </a>
+        </div>
     </main>
 <?php
     get_footer();
