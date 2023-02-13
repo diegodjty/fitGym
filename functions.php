@@ -73,7 +73,16 @@ function fitGym_hero_image(){
     // Get image route
     $image = wp_get_attachment_image_src($image_id, 'full')[0];
     // Create Css
+    wp_register_style('custom',false);
+    wp_enqueue_style('custom');
+
+    $highlited_image_css = "
+        body.home .header{
+            background-image: linear-gradient(rgb(0 0 0 / 0.75),rgb(0 0 0 /0.75)),url($image);
+        }
+    ";
 
     // Inyect Css
+    wp_add_inline_style('custom',$highlited_image_css);
 }
 add_action('init','fitGym_hero_image');
