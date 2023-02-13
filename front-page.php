@@ -60,6 +60,13 @@
         <p class="text-center">Professionals Instructors To help you</p>
         <?php fitGym_instructors_list();?>
     </section>
+
+    <section class="testimonials">
+    <h2 class="text-center primary-text">Testimonials</h2>
+        <div class="testimonials-container">
+            <?php fitGym_testimonials();?>
+        </div>
+    </section>
 <?php 
     get_footer();
 ?>

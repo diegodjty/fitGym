@@ -75,3 +75,35 @@ function fitGym_instructors_list(){
          </ul>
     <?php
 }
+
+function fitGym_testimonials(){
+    ?>
+        <ul class="testimonials-list">
+            <?php
+                $args = array(
+                    'post_type' => 'testimonials'
+                );
+               
+                $testimonials = new WP_Query($args);
+                // echo $testimonials;
+                while($testimonials->have_posts()){
+                    $testimonials->the_post();
+                ?>
+                    <li class="testimonial text-center">
+                        <blockquote>
+                            <?php the_content() ;?>
+                        </blockquote>
+                        <footer class="testimonial-footer">
+                        <?php the_post_thumbnail('thumbnail') ;?>
+                        <p>
+                            <?php the_title();?>
+                        </p>
+                        </footer>
+                    </li>
+                <?php
+                    }
+                    wp_reset_postdata();
+                ?>
+         </ul>
+    <?php
+}
