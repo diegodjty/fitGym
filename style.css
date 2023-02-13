@@ -743,3 +743,22 @@ body.home .header {
 .comments input[type='text'] {
   margin: 0.5rem 0;
 }
+
+.comments-list .comment {
+  background-color: lightgray;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+.comments-list a {
+  color: var(--primary);
+}
+.comments-list cite {
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.comments-list .children .comment {
+  background-color: white;
+  margin: 2rem;
+}
