@@ -78,7 +78,7 @@ function fitGym_instructors_list(){
 
 function fitGym_testimonials(){
     ?>
-        <ul class="testimonials-list">
+        <ul class="testimonials-list swiper-wrapper">
             <?php
                 $args = array(
                     'post_type' => 'testimonials'
@@ -89,7 +89,7 @@ function fitGym_testimonials(){
                 while($testimonials->have_posts()){
                     $testimonials->the_post();
                 ?>
-                    <li class="testimonial text-center">
+                    <li class="testimonial text-center swiper-slide">
                         <blockquote>
                             <?php the_content() ;?>
                         </blockquote>

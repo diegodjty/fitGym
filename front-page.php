@@ -63,7 +63,7 @@
 
     <section class="testimonials">
     <h2 class="text-center primary-text">Testimonials</h2>
-        <div class="testimonials-container">
+        <div class="testimonials-container swiper">
             <?php fitGym_testimonials();?>
         </div>
     </section>
