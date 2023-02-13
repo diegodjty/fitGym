@@ -63,3 +63,17 @@ function fitGym_location_shotcode(){
     echo do_shortcode('[contact-form-7 id="107" title="Contact form 1"]');
 }
 add_shortcode('fitGym_location','fitGym_location_shotcode');
+
+/** Dynamic images as background */
+function fitGym_hero_image(){
+    // Get id of the page
+    $front_id = get_option('page_on_front');
+    // get the image
+    $image_id = get_field('hero_image',$front_id);
+    // Get image route
+    $image = wp_get_attachment_image_src($image_id, 'full')[0];
+    // Create Css
+
+    // Inyect Css
+}
+add_action('init','fitGym_hero_image');

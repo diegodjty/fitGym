@@ -23,4 +23,12 @@
                 wp_nav_menu($args) 
             ?>
         </div>
+        <?php if(is_front_page()){?>
+            <div class="tagline text-center">
+                <h1>
+                    <?php the_field('hero_heading');?>
+                </h1>
+                <p><?php the_field('hero_text');?></p>
+            </div>
+        <?php } ?>
     </header>
