@@ -5,6 +5,20 @@
         ?>
        <div class="comments">
             <?php comment_form()?>
+            <h3 class="text-center primary-text">Comments</h3>
+            <ul class="comments-list">
+                <?php 
+                    $comments = get_comments(array(
+                        'post_id' => $post->ID,
+                        'status' => 'approve'
+                    ));
+
+                    wp_list_comments(array(
+                        'per_page'=>10,
+                        'reverse_top_level'=> false
+                    ),$comments)
+                ?>
+            </ul>
        </div>
     </main>
 <?php

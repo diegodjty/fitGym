@@ -737,9 +737,9 @@ body.home .header {
 .comment-form-comment textarea {
   border: 1px solid lightgray;
   width: 100%;
+  padding: 1rem;
 }
 
 .comments input[type='text'] {
-  padding: 1rem;
   margin: 0.5rem 0;
 }
