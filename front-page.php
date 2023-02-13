@@ -67,6 +67,24 @@
             <?php fitGym_testimonials();?>
         </div>
     </section>
+    <section class="container section">
+    <h2 class="text-center primary-text">Our Blog</h2>
+        <p class="text-center">Learn tips from our Instructors</p>
+        <ul class="grid-list">
+            <?php 
+                $args = array(
+                    'post_type'=> 'post',
+                    'post_per_page'=> 4
+                );
+                $blog = new WP_Query($args);
+                while($blog->have_posts()){
+                    $blog->the_post();
+                    get_template_part('template-parts/blog');
+                }
+                wp_reset_postdata();
+            ;?>
+        </ul>
+    </section>
 <?php 
     get_footer();
 ?>
