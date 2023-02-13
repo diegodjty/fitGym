@@ -31,7 +31,9 @@ function fitGym_scripts_styles(){
     // JS files
     wp_enqueue_script('lightbox.js',get_template_directory_uri().'/js/lightbox.min.js',array('jquery'),'2.11.3',true);
     wp_enqueue_script('swiper-js','https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js',array(),'8.4.7',true);
-    wp_enqueue_script('scripts',get_template_directory_uri().'/js/scripts.js',array('swiper-js'),true);
+    wp_enqueue_script('anime','https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js',array(),'2.0.2');
+    wp_enqueue_script('scripts',get_template_directory_uri().'/js/scripts.js',array('swiper-js','anime'),true);
+    
 }
 
 add_action('wp_enqueue_scripts','fitGym_scripts_styles');
