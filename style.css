@@ -198,10 +198,39 @@ body.home .header {
     width: 12rem;
   }
 }
-.main-menu {
+/* .main-menu {
   display: none;
-}
+} */
 
+.hamburger-menu:hover {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+.menu-container {
+  opacity: 0;
+  max-height: 0;
+  transition-delay: 300ms, 100ms;
+  transition-property: opacity, max-height;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+}
+@media (min-width: 768px) {
+  .menu-container {
+    all: unset;
+  }
+}
+.show {
+  opacity: 1;
+  max-height: 35rem;
+  transition-delay: 100ms, 300ms;
+  transition-property: max-height, opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+}
 @media (min-width: 768px) {
   .main-menu {
     display: block;
