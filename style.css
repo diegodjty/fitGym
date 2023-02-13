@@ -762,3 +762,25 @@ body.home .header {
   background-color: white;
   margin: 2rem;
 }
+
+/** Pagination **/
+
+.pagination .screen-reader-text {
+  visibility: hidden;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.nav-links a {
+  font-size: 1.4rem;
+  color: var(--primary);
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+.nav-links .current {
+  padding: 0.5rem;
+  font-size: 1.4rem;
+}
